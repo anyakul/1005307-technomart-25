@@ -2,6 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+		<link href="style.css" rel="stylesheet">
         <title>HTML Academy: Техномарт</title>
     </head>
     <body>
@@ -10,7 +11,7 @@
 	            <a class="logo">
 	                <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт">
 		        </a>
-		        <div class="search">Поиск</div>
+		        <a href="search.html">Поиск</div>
 		        <ul class="header-order-navigation">
                     <li><a class="order-button" href="#">Закладки</a></li>
                     <li><a class="order-button" href="#">Корзина</a></li>
@@ -25,7 +26,7 @@
 		        </ul>
                 <ul class="user-navigation">
                     <li><a href="login.html">Вход</a></li>
-		            <li><a href="sigh-up.html">Регистрация</a></li>
+		            <li><a href="sign-up.html">Регистрация</a></li>
 		        </ul>
             </section>
 	        <nav class="header-site-navigation">
@@ -60,16 +61,19 @@
 						<li>ЖелДорЭкспедиция</li>
 					</ul>
 				</ul>
-				<a class="button">Подробнее о компании</a>
+				<a class="button" href="#">Подробнее о компании</a>
 			</section>
 			<section class="contacts">
 			    <h2>Контакты</h2>
 			    <p class="pick-up">Вы можете забрать товар сами,<br>
 				заехав в наш офис:</p>
 				<a>
-				    <img src="img/map.png" width="300" height="158" alt="Карта как до нас добраться">
+				    <img src="img/map.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				</a>
-				<a class="button">Заблудились? Напишите нам!</a>
+				<a class="visually-hidden">
+				    <img src="img/map.png" width="940" height="446.2px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+				</a>
+				<a class="button" href="contacts.html">Заблудились? Напишите нам!</a>
 			</section>
 	    </main>
 	    <footer>
@@ -92,9 +96,9 @@
                         <li><a href="contacts.html">Контакты</a></li>	
 		            </ul>
 		            <ul class="catalog-navigation">
-		                <li><a href="company.html">Материалы</a></li>
-                        <li><a href="news.html">Техника</a></li>
-                        <li><a href="catalog.html">Инструмент</a></li>
+		                <li><a href="#">Материалы</a></li>
+                        <li><a href="#">Техника</a></li>
+                        <li><a href="#">Инструмент</a></li>
                         <li><a href="special-offers.html">Спецпредложения</a></li>
 		            </ul>
 				</section>
@@ -106,20 +110,39 @@
 			    </p>
   			    <div class="footer-social">
 				    <ul>
-                        <li><a class="social-button" href="#">Вконтакте</a></li>
-                        <li><a class="social-button" href="#">Фейсбук</a></li>
-                        <li><a class="social-button" href="#">Инстаграм</a></li>
+					    <li><a href="https://vk.com/" aria-label="ВКонтакте"></a>vk</li>
+					    <li><a href="https://facebook.com/" aria-label="Фейсбук"></a>fb</li>
+					    <li><a href="https://instagram.com/" aria-label="Инстаграмм"></a>I</li>				
                     </ul>
                 </div>
 				<p class="footer-copyright">
                     <b>Обратная связь:</b> 
-                    <a class="button" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+                    <a href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>                
 				<p class="footer-copyright">
                     <b>Разработано:</b> 
-                    <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+                    <a href="https://htmlacademy.ru">HTML Academy</a>
                 </p>
 			</section>
-		</footer>  
+			
+		</footer>
+		<section class="modal modal-login">
+            <h2 class="visually-hidden">Отправить сообщение</h2>
+            <form>
+			    <ul>
+                    <li>
+				        <label>Ваше имя<input class="message" type="text" name="name" placeholder="Имя Фамилия"></label>
+				    </li>
+                    <li>
+				        <label>Ваш e-mail:<input class="message" type="text" name="email" placeholder="email@example.com"></label>
+					</li>
+                    <li>
+				        <label>Текст письма:<textarea>В свободной форме</textarea></label>
+				    <li>
+                </ul>					
+				<button type="submit">Отправить</button>
+                <span class="modal-close">x</span>
+			</form>
+		</section>
 	</body>
 </html>
