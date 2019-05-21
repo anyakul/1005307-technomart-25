@@ -61,7 +61,10 @@
 			    <h2>ФИЛЬТР:</h2>
 				<fieldset class="price">
 				    <legend>Цена</legend>
-					
+					<input type="range" min="0" max="30000" step="1">
+					<input type="number" min="0" max="30000" placeholder="0"> 
+					<span>-</span>
+					<input type="number" min="0" max="30000" placeholder="30000"> 
 				</fieldset>
 				<fieldset class="producer">
                     <legend>ПРОИЗВОДИТЕЛИ:</legend>
@@ -99,9 +102,9 @@
 			<form method="POST" action="https://echo.htmlacademy.ru/" class="order-by">
 			    <fieldset>
 			        <legend>СОРТИРОВКА</legend>
-				    <button>ПО ЦЕНЕ</button>
-				    <button>ПО ТИПУ</button>
-				    <button>ПО ФУНКЦИОНАЛУ</button>
+				    <button class="by-price">ПО ЦЕНЕ</button>
+				    <button class="by-type">ПО ТИПУ</button>
+				    <button class="by-function">ПО ФУНКЦИОНАЛУ</button>
 				</fieldset>
 			</form>
 			<section class="goods">
