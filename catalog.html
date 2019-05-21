@@ -58,7 +58,11 @@
 			    <h1>ПЕРФОРАТОРЫ</h1>
 			</section>
 			<form method="POST" action="https://echo.htmlacademy.ru/">
-			    <fieldset>
+			    <h2>ФИЛЬТР:</h2>
+				<fieldset class="price">
+				    <legend>Цена</legend>
+				</fieldset>
+				<fieldset class="producer">
                     <legend>ПРОИЗВОДИТЕЛИ:</legend>
    			        <ul>
 				        <li>
@@ -90,6 +94,14 @@
 					</ul>
 				</fieldset>
 				<button type="submit">Показать</button>
+			</form>
+			<form method="POST" action="https://echo.htmlacademy.ru/" class="order-by">
+			    <fieldset>
+			        <legend>СОРТИРОВКА</legend>
+				    <button>ПО ЦЕНЕ</button>
+				    <button>ПО ТИПУ</button>
+				    <button>ПО ФУНКЦИОНАЛУ</button>
+				</fieldset>
 			</form>
 			<section class="goods">
 			    <p class="visually-hidden">Перфораторы</p>
@@ -149,19 +161,31 @@
 					<p class="new_price">12500</p>
 				</div>				
 			</section>
+			<ul class="pagination-list">
+                <li class="pagination-item pagination-item-active"><a href="#">1</a></li>
+                <li class="pagination-item"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+			</ul>
+			<section class="about-perforator">
+			    <h1>ПАРА СЛОВ О ПЕРФОРАТОРАХ<h1>
+			    <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+				Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
+				ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+			</section>
 	    </main>
 	    <footer>
 	        <section class="footer-site-navigation">
-	            <section class="footer-contacts">
+	            <div class="footer-contacts">
   	  	            <a class="logo">
 	                    <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина Техномарт">
 		            </a>
 		            <address class="footer-adress">
-		                "г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
+		                "г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"<br>
 						<a href="tel:+78125550555">+7 (812) 555 05 55</a>
 		            </address>
-				</section>
-		        <section class="footer-navigation">
+				</div>
+		        <div class="footer-navigation">
 		            <ul class="footer-site-navigation">
                         <li><a href="company.html">Компания</a></li>
                         <li><a href="news.html">Новости</a></li>
@@ -170,23 +194,23 @@
                         <li><a href="contacts.html">Контакты</a></li>	
 		            </ul>
 		            <ul class="catalog-navigation">
-		                <li><a href="company.html">Материалы</a></li>
-                        <li><a href="news.html">Техника</a></li>
-                        <li><a href="catalog.html">Инструмент</a></li>
+		                <li><a href="#">Материалы</a></li>
+                        <li><a href="#">Техника</a></li>
+                        <li><a href="#">Инструмент</a></li>
                         <li><a href="special-offers.html">Спецпредложения</a></li>
 		            </ul>
-				</section>
+				</div>
 		    </section>
-			<section class="footer-section">
+			<div class="footer-section">
 			    <p class="footer-copyright">
 				    ©2010-2017 Компания "Техномарт"<br>
 					Все права защищены
 			    </p>
   			    <div class="footer-social">
 				    <ul>
-					    <li><a href="https://vk.com/" aria-label="ВКонтакте"></a></li>
-					    <li><a href="https://facebook.com/" aria-label="Фейсбук"></a></li>
-					    <li><a href="https://instagram.com/" aria-label="Инстаграмм"></a></li>				
+					    <li><a href="https://vk.com/" aria-label="ВКонтакте"></a>vk</li>
+					    <li><a href="https://facebook.com/" aria-label="Фейсбук"></a>fb</li>
+					    <li><a href="https://instagram.com/" aria-label="Инстаграмм"></a>I</li>				
                     </ul>
                 </div>
 				<p class="footer-copyright">
@@ -197,8 +221,8 @@
                     <b>Разработано:</b> 
                     <a href="https://htmlacademy.ru">HTML Academy</a>
                 </p>
-			</section>
-		</footer>  
+			</div>
+		</footer>
 		<section>
 		    <form method="POST" action="https://echo.htmlacademy.ru/">
 		        <p>Товар добавлен в корзину!</p>
