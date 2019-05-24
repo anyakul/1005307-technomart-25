@@ -2,48 +2,58 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
         <title>HTML Academy: Техномарт</title>
     </head>
     <body>
         <header>
-            <section class="account">
-	            <a class="logo" href="index.html">
+            <section class="menu-order">
+	            <a class="logo-back">
 	                <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт">
 		        </a>
-		        <div class="search">Поиск</div>
+		        <form class="search" method="GET" action="https://echo.htmlacademy.ru/">
+				    <label>
+					    <a href="search.html">Поиск:</a>
+					    <input type="text">
+					</label>
+				</form>
 		        <ul class="header-order-navigation">
-                    <li><a class="order-button" href="marks.html">Закладки</a></li>
-                    <li><a class="order-button" href="basket.html">Корзина</a></li>
-                    <li><a class="order-button" href="order.html">Оформить заказ</a></li>
+                    <li><a class="main-button" href="marks.html">Закладки: 0</a></li>
+                    <li><a class="button" href="basket.html">Корзина: 10</a></li>
+                    <li><a class="make-order-button" href="order.html">Оформить заказ</a></li>
 		        </ul>
 	        </section> 
-	        <section class="header-contacts">
+	        <section class="top-background">
 	            <h1 class="shop-name">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
 		        <ul class="header-contacts"> 
-		            <li class="phone">+7 (812) 555-05-55</li>
+		            <div class="phone-back">
+    		            <li class="phone">+7 (812) 555-05-55</li>
+					</div>
 		            <li class="address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
 		        </ul>
                 <ul class="user-navigation">
-                    <li class="user-name">Рамшан Джамшутович</li>
-		            <li><a href="my-orders.html">Мои заказы</a></li>
-					<li><a href="account.html">Личный кабинет</a></li>
+                    <li><a class="user-name">Рамшан Джамшутович</a></li>
+		            <li><a class="my-orders" href="my-orders.html">Мои заказы</a></li>
+					<li><a class="my-account" href="account.html">Личный кабинет</a></li>
 		        </ul>
-            </section>
-	        <nav class="header-site-navigation">
-	            <ul>
-	                <li><a href="main.html">Главная</a></li>
-                    <li><a href="company.html">Компания</a></li>
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="news.html">Новости</a></li>
-                    <li><a href="special-offers.html">Спецпредложения</a></li>
-                    <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>		  
-		        </ul>
-	        </nav>
+	            <nav>
+	                <ul class="main-menu">
+	                    <li><a href="main.html">Главная</a></li>
+                        <li><a href="company.html">Компания</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="special-offers.html">Спецпредложения</a></li>
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>		  
+		            </ul>
+	            </nav>
+			</section>
         </header>
 	    <main>
-		    <section class="catalog-navigation">
+		    <section class="catalog-navigation-main">
 			    <ul>
 				    <li><a href="catalog.html">Каталог</a></li>
 					<ul>
@@ -58,17 +68,17 @@
 			    <h1>Перфораторы</h1>
 			</section>
 			<form method="GET" action="https://echo.htmlacademy.ru/">
-			    <h2>Фильтр:</h2>
-				<fieldset class="price">
-				    <legend>Цена</legend>
+			    <h2 class="filter">Фильтр:</h2>
+				<div class="price-range">
+				    <p>Цена</p>
 					<input type="range" min="0" max="30000" step="1">
 					<input type="number" min="0" max="30000" placeholder="0"> 
 					<span>-</span>
 					<input type="number" min="0" max="30000" placeholder="30000"> 
-				</fieldset>
-				<fieldset class="brands">
-                    <legend>Производители:</legend>
-   			        <ul>
+				</div>
+				<div class="brands">
+                    <p>Производители:</p>
+   			        <ul class="brands">
 				        <li>
 							<label><input type="checkbox" name="bosch" checked>Bosch</label>
 						</li>
@@ -85,9 +95,9 @@
 							<label><input type="checkbox" name="hitachi">Hitachi</label>
 						</li>
 				    </ul>
-				</fieldset>
-				<fieldset>
-				    <legend>Питание:</legend>
+				</div>
+				<div class="power">
+				    <p>Питание:</p>
 				    <ul class="power">
 				        <li>
 						    <label><input type="radio" name="power-group" value="battery" checked>Аккумуляторные</label>
@@ -96,72 +106,81 @@
 						    <label><input type="radio" name="power-group" value="utility">Сетевые</label>
 						</li>
 					</ul>
-				</fieldset>
-				<button type="submit">Показать</button>
+				</div>
+				<button class="show-result" type="submit">Показать</button>
 			</form>
-			<form method="GET" action="https://echo.htmlacademy.ru/" class="order-by">
-			    <fieldset>
-			        <legend>Сортировка</legend>
+			<form method="GET" action="https://echo.htmlacademy.ru/">
+			    <div class="order-by">
+			        <p>Сортировка</p>
 				    <a href="#" class="by-price">По цене</a>
 				    <a href="#" class="by-type">По типу</a>
 				    <a href="#" class="by-function">По функционалу</a>
-				</fieldset>
+				</div>
 			</form>
 			<section class="goods">
 			    <p class="visually-hidden">Перфораторы</p>
-                <div>
-                    <img src="img/item1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-					<a href="#">Перфоратор BOSCH BFG 3000</a>
-					<p class="price">22500</p>
-					<p class="new_price">15500</p>
+                <div class="item-background">
+                    <div class="unhover">
+					    <img src="img/item1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+						<a href="#">Перфоратор BOSCH BFG 3000</a>
+					    <p class="price">22500</p>
+					    <p class="button item-button">15500</p>
+					</div>
+					<div class="hover">
+					    <a class="buy">Купить</a>
+  					    <a class="marks">В закладки</a>
+				        <p class="price">22500</p>
+					    <button class="button item-button">15500</button>
+					</div>					
 				</div>
-                <div>
+                <div class="item-background">
                     <img src="img/item.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 					<a href="#">Перфоратор BOSCH BFG 6000</a>
 					<p class="price">30500</p>
-					<p class="new_price">25500</p>
+					<p class="button item-button">25500</p>
 				</div>
-                <div>
-                    <img src="http://placehold.it/150x100" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+                <div class="item-background">
+					<a class="buy">Купить</a>
+  					<a class="goods-marks">В закладки</a>
 					<a href="#">Перфоратор BOSCH BFG 2000</a>
 					<span>new</span>
-					<p class="new_price">12500</p>
+					<p class="button item-button">12500</p>
     			</div>
-                <div>
+                <div class="item-background">
                     <img src="img/item1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 					<a href="#">Перфоратор BOSCH BFG 3000</a>
 					<p class="price">22500</p>
-					<p class="new_price">15500</p>
+					<p class="button item-button">15500</p>
 				</div>
-                <div>
+                <div class="item-background">
                     <img src="img/item.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 					<a href="#">Перфоратор BOSCH BFG 6000</a>
 					<p class="price">30500</p>
 					<span>new</span>
-					<p class="new_price">25500</p>
-				</div>
-                <div>
+					<p class="button item-button">25500</p>
+				</div >
+                <div class="item-background">
                     <img src="img/item1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 					<a href="#">Перфоратор BOSCH BFG 2000</a>
-					<p class="new_price">12500</p>
+					<p class="button item-button">12500</p>
 				</div>
-                <div>
+                <div class="item-background">
                     <img src="img/item1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 					<a href="#">Перфоратор BOSCH BFG 3000</a>
 					<p class="price">22500</p>
 					<span>new</span>
-					<p class="new_price">15500</p>
+					<p class="button item-button">15500</p>
 				</div>
-                <div>
+                <div class="item-background">
                     <img src="img/item.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 					<a href="#">Перфоратор BOSCH BFG 6000</a>
 					<p class="price">30500</p>
-					<p class="new_price">25500</p>
+					<p class="button item-button">25500</p>
 				</div>
-                <div>
+                <div class="item-background">
                     <img src="img/item1.png" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
 					<a href="#">Перфоратор BOSCH BFG 2000</a>
-					<p class="new_price">12500</p>
+					<p class="button item-button">12500</p>
 				</div>				
 			</section>
 			<ul class="pagination-list">
@@ -178,12 +197,12 @@
 			</section>
 	    </main>
 	    <footer>
-	        <section class="footer-site-navigation">
+	        <section class="footer-nav-back">
 	            <div class="footer-contacts">
-  	  	            <a class="logo">
+  	  	            <a class="footer-logo-back">
 	                    <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина Техномарт">
 		            </a>
-		            <address class="footer-adress">
+		            <address class="footer-address">
 		                "г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"<br>
 						<a href="tel:+78125550555">+7 (812) 555 05 55</a>
 		            </address>
@@ -204,34 +223,32 @@
 		            </ul>
 				</div>
 		    </section>
-			<div class="footer-section">
+			<div class="footer-copyright-back">
 			    <p class="footer-copyright">
 				    ©2010-2017 Компания "Техномарт"<br>
 					Все права защищены
 			    </p>
-  			    <div class="footer-social">
-				    <ul>
-					    <li><a href="https://vk.com/" aria-label="ВКонтакте"></a>vk</li>
-					    <li><a href="https://facebook.com/" aria-label="Фейсбук"></a>fb</li>
-					    <li><a href="https://instagram.com/" aria-label="Инстаграмм"></a>I</li>				
-                    </ul>
-                </div>
+				<ul class="footer-social">
+					<li><a href="https://vk.com/" aria-label="ВКонтакте">vk</a></li>
+					<li><a href="https://facebook.com/" aria-label="Фейсбук">fb</a></li>
+					<li><a href="https://instagram.com/" aria-label="Инстаграмм">I</a></li>				
+                </ul>
 				<p class="footer-copyright">
                     <b>Обратная связь:</b> 
-                    <a href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+                    <a class="contacts" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
                 </p>                
 				<p class="footer-copyright">
                     <b>Разработано:</b> 
-                    <a href="https://htmlacademy.ru">HTML Academy</a>
+                    <a class="contacts" href="https://htmlacademy.ru">HTML Academy</a>
                 </p>
 			</div>
 		</footer>
-		<section>
-		    <form method="POST" action="https://echo.htmlacademy.ru/">
-		        <p>Товар добавлен в корзину!</p>
-			    <a href="order.html" class="order">Оформить заказ</a>
+		<form class="added-to-basket" method="POST" action="https://echo.htmlacademy.ru/">
+		    <p>Товар добавлен в корзину!</p>
+			<div class="button-in-form">
+				<a href="order.html" class="button">Оформить заказ</a>
 			    <a href="catalog.html" class="continue">Продолжить покупки</a>
-			</form>
-		</section>
+			</div>
+		</form>
 	</body>
 </html>

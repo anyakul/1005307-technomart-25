@@ -8,3 +8,720 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*общие стили*/
+body {
+  margin: 0;
+  
+  font-family: "cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+.header-order-navigation ,
+.header-contacts,
+.user-navigation,
+.main-menu,
+.categories,
+.slides-switches,
+.brands-back,
+.service-back,
+.delivery-company,
+.about-company-list,
+.about-delivery,
+.slide-btn,
+.footer-site-navigation,
+.catalog-navigation,
+.footer-social,
+.pagination-list,
+.brands,
+.power,
+.message,
+.services,
+.service,
+.message-input {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  height: 5000px
+}
+
+.button {
+	background-color: #ff5357;
+	border: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.button:hover,
+.button:focus {
+	background-color: #ca2c37;
+	border: none;
+}
+
+.button:active {
+	background-color: #ba2732;
+	border: none;
+}
+
+/*ХЕДЕР*/
+
+/*меню заказа*/
+
+.menu-order {
+  background-color: #293449;
+  list-style: none;
+  color: #ffffff;
+  font-size: 17px
+}
+
+.main-button:hover,
+.main-button:focus {
+	 background-color: #212a3a;
+}
+
+.main-button:active {
+	background-color: #161d29;
+	color: rgba(255, 255, 255, 0.6)
+}
+
+.logo-back {
+	background-color: #ee3643;
+	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo-back:hover,
+.logo-back:focus,
+.basket:hover,
+.basket:focus {
+	background-color: #ca2c37;
+}
+
+.logo-back:active {
+	background-color: #ba2732;
+}
+
+.make-order-button {
+  background-color: #63a63e;
+}
+.make-order-button:hover,
+.make-order-button:focus {
+  background-color: #5fbb2d;
+}
+
+.make-order-button:active {
+  background-color: #518534;
+  color: rgba(255, 255, 255, 0.6)
+}
+.search input {
+	display:none;
+}
+
+.search input:active {
+	display;
+	color: #000000;
+}
+
+.search form {
+	background-color: #293449;
+}
+.search:active {
+	background-color: #ffffff;
+	color: #000000
+}
+
+/*меню навигации*/
+.main-menu li {
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+  font-size: 17px;
+  line-height: 1;
+  text-align: left;
+ }
+
+.main-menu li:hover,
+.main-menu li:focus {
+  background-color: #293449;
+}
+.main-menu li:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+
+/*меню пользователя*/
+
+.top-background,
+.about-perforator {
+	background-color: #f1f5f7;
+}
+.shop-name {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.44;
+  text-align: left;
+  color: #ee3643;
+}
+.phone {
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+  color: #ee3643;
+}
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #32425c;
+}
+.login-back,
+.register-back {
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+  color: #000000;
+  background-color: #ffffff;
+}
+.register-back:hover,
+.register-back:focus,
+.login-back:hover,
+.login-back:focus {
+  color: #ee3643;
+}
+.register-back:active,
+.login-back:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.user-name {
+	color: #000000;
+	font-size: 21px;
+	background-color: #ffffff;
+}
+
+.my-orders,
+.my-account {
+	color: #32425c;
+	font-size: 16px;
+}
+.my-orders:hover,
+.my-orders:focus,
+.my-account:hover,
+.my-account:focus {
+	color: #ee3643
+}
+.my-orders:active,
+.my-account:active,
+.user-name:active {
+	color: rgba(50, 66, 92, 0.3)
+}
+
+
+
+/*ФУТЕР*/
+
+.footer-nav-back {
+	background-color: #32425c;
+	font-size: 16px;
+}
+.footer-site-navigation a {
+	color: #f1f5f7;
+}
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus {
+  text-decoration: underline;
+}
+
+.footer-site-navigation a:active {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+ 
+.catalog-navigation a {
+  background-color: #32425c;
+  color: #ffd180;
+}
+.catalog-navigation a:hover,
+.catalog-navigation a:focus {
+  text-decoration: underline;
+}
+.catalog-navigation a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none
+}
+
+.footer-address {
+	color: #f3f7f9;
+	font-size: 18px;
+}
+
+/*Копирайт*/
+
+.footer-copyright-back {
+	background-color: #293449;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.footer-copyright a {
+	background-color: #293449;
+}
+
+.footer-copyright p {
+	color: #ffffff;
+}
+
+.contacts {
+  color: #ffd180;
+  font-size: 16px;
+}
+
+.contacts:hover,
+.contacts:focus {
+  text-decoration: underline;
+}
+
+.contacts:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
+.footer-social a {
+  background-color: #212a3a;
+}
+
+.footer-social a:hover,
+.footer-social a:focus,
+.footer-social a:active {
+	background-color: #ee3643;
+}
+
+.footer-logo-back {
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+
+/*MAIN*/
+
+/*категории*/
+
+.categories li {
+  font-size: 36px;
+  width: 300px;
+  height: 123px;
+  color: #ffffff
+}
+
+.category-button {
+  width: 135px;
+  height: 38px;
+  font-size: 14px;
+  opacity: 0.1;
+  background-color: #000000;
+}
+
+.category-button a {
+	color: ffffff;
+}
+
+.category-button:focus,
+.category-button:hover {
+  opacity: 0.2;
+}
+.category-button:active {
+  opacity: 0.3; 	
+}
+.materials {
+  background-color: #ffbf47;
+  color: #ffffff;
+}
+
+.tools {
+  background-color: #3bbce3;
+}
+
+.technics {
+  background-color: #dc91d8;
+}
+.discounts {
+  background-color: #8ed78f;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
+
+/*слайды*/
+.slide-radio li:first-child {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.slide-radio li:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/*популярные товары и производители*/
+.popular-back h2,
+.brands-back h2 {
+  background-color: #f9f5f0;
+  font-size: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.popular-button,
+.brands-button {
+  font-size: 14px;
+  background-color: #ee3643;
+  text-transform: uppercase
+}
+
+/*карточка товара*/
+.item-background {
+  border: solid 1px #eaeaea;
+}
+
+.item-background a {
+  font-family: PTSans;
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.price {
+  font-family: PTSans;
+  font-size: 17px;
+  color: #a9a9a9;
+  font-weight: bold;
+  text-decoration: line-through
+}
+
+.item-button {
+  font-family: PTSans;
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-decoration: none;
+ }
+ 
+ .unhover div {
+  display: inline;
+ }
+ 
+ .unhover div:hover,
+ .unhover div:focus,
+ .unhover div:active {
+  display: none;
+}
+ 
+.hover {
+  display: none;
+}
+
+.hover:hover,
+.hover:focus,
+.hover:active {
+  display: inline;
+}
+
+.unhover a {
+  display: none;
+}
+.buy {
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+}
+
+.buy:hover,
+.buy:focus {
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #5fbb2d;
+}
+
+.buy:active {
+    background-color: #518534;
+}
+.goods-marks {
+  border: solid 3px #63a63e;
+  font-size: 14px;
+  color: #32425c
+}
+
+.goods-marks:hover,
+.goods-marks:focus {
+  border: solid 3px #32425c;
+}
+
+.goods-marks:active {
+  opacity: 0.3;
+  border: solid 3px #32425c;
+}
+ 
+ /*популярные производители*/
+ .brands-back li {
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+ }
+.brands-back li:hover,
+.brands-back li:focus {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.brands-back li:active {
+  object-fit: contain;
+  opacity: 0.3;
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+/*Сервисы*/
+.service-back {
+  background-color: #f4f7f9;
+}
+.service-back h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.slide-button {
+	font-size: 21px;
+	background-color: #32425c;
+	border: none;
+	color: #ffffff
+}
+.slide-button:hover,
+.slide-button:focus {
+	background-color: #293449;
+	border: none;
+}
+.slide-button:active {
+	background-color: #ffffff;
+	color: #32425c;
+	border: none;
+}
+.slide-button-pushed {
+	background-color: #ffffff;
+	color: #32425c;
+}
+
+.service-back p {
+	color: #000000;
+	font-size: 13px;
+}
+
+.service-back h3 {
+	font-size: 36px;
+	text-transform: uppercase;
+	color: #32425c;
+}
+
+/*О компании*/
+
+.description-company h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.description-company p {
+	font-size: 13px;
+	font-family: PTSans;
+}
+.delivery-company {
+	font-size: 18px;
+}
+.our-office h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.our-office p {
+	font-size: 13x;
+	font-family: PTSans;
+}
+
+/*СТРАНИЦА КАТАЛОГА*/
+
+/*навигация по каталогу*/
+
+.catalog-navigation-main a {
+	font-size: 13px;
+	text-transform: uppercase;
+	font-family: PTSans;
+	color: #000000;
+}
+
+.catalog-category h1 {
+	text-transform: uppercase;
+	background-color: #f2f6f8;
+	font-size: 30px;
+	text-align: left;
+	color: #32425c;
+}
+
+/*фильтры*/
+
+.filter {
+  background-color: #f7f3ec;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.price-range p,
+.brands p,
+.power p {
+  font-family: PTSans;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.price-range input {
+	border: none;
+	background-color: #f7f3ec;
+}
+	
+.brands li, 
+.power li {
+  font-family: PTSans;
+  color: #000000;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.show-result {
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.order-by {
+  background-color: #f7f3ec;
+  font-size: 13px;
+  color: #000000;
+  text-transform: uppercase;
+ }
+ 
+.by-price {
+  font-family: PTSans;
+  font-size: 13px;
+  color: #ee3643;
+  text-transform: uppercase;
+}
+
+.by-type,
+.by-function {
+  opacity: 0.3;
+  font-family: PTSans;
+  font-size: 13px;
+  text-align: left;
+  color: var(--black-two-30);
+  text-transform: uppercase;
+  text-decoration: underline dotted red;
+}
+
+.by-type:hover,
+.by-function:hover,
+.by-type:focus,
+.by-function:focus {
+	color: #000000;
+	opacity: 1;
+}
+
+.by-type:active,
+.by-function:active {
+	color: #ee3643;
+	opacity: 1;
+}
+
+.brands input:disabled,
+.power input:disabled  {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*пагинация*/
+.pagination-item a {
+  font-family: PTSans;
+  font-size: 13px;
+  color: #000000;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
+}
+
+.pagination-item-active a {
+	background-color: #ee3643;
+}
+
+
+/*пара слов о перфораторах*/
+
+.about-perforator h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  color: #000000;
+}
+.about-perforator p {
+  font-family: PTSans;
+  font-size: 13px;
+  text-align: left;
+  color: #000000;
+}
+
+/*Форма отправления письма и добавлено в корзину*/
+
+.message,
+.added-to-basket {
+	background-color: #ffffff;
+	color: #000000;
+	box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.added-to-basket p {
+  font-size: 27px;
+  color: #000000;
+}
+
+.message li {
+  font-size: 18px;
+  color: #000000;
+}
+.message input,
+.message textarea {
+  box-shadow: none;
+  font-family: PTSans;
+  font-size: 13px;
+  color: #999999;
+}
+.message input:focus,
+.message textarea:focus {
+  border: solid 2px #ee3643;
+}
+.button-in-form {
+  background-color: #f1f1f1;
+}
+
+.continue {
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #000000;
+  text-transform: uppercase;
+}
+	  
