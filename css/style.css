@@ -13,7 +13,7 @@
 body {
   margin: 0;
   color: #000000;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Сuprum", Arial, sans-serif;
   line-height: 24px;
   background-color: #ffffff;
 }
@@ -396,29 +396,26 @@ a {
   font-weight: bold;
  }
  
- .unhover div {
-  display: inline;
+.item-background img {
+  display: block;
  }
  
- .unhover div:hover,
- .unhover div:focus,
- .unhover div:active {
+.item-background img:hover,
+.item-background img:focus,
+.item-background img:active {
   display: none;
 }
  
-.hover {
+.hover a {
   display: none;
 }
 
-.hover:hover,
-.hover:focus,
-.hover:active {
-  display: inline;
+.hover a:hover,
+.hover a:focus,
+.hover a:active {
+  display: block;
 }
 
-.unhover a {
-  display: none;
-}
 .buy {
   box-shadow: inset 0px -3px 0 0 #367315;
   background-color: #63a63e;
