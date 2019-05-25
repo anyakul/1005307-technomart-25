@@ -383,7 +383,8 @@ a {
   font-size: 17px;
   color: #a9a9a9;
   font-weight: bold;
-  text-decoration: line-through
+  text-decoration: line-through;
+  text-transform: uppercase;
 }
 
 .item-button {
@@ -392,6 +393,7 @@ a {
   color: #ffffff;
   background-color: #ee3643;
   text-decoration: none;
+  font-weight: bold;
  }
  
  .unhover div {
