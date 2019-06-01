@@ -1,6 +1,12 @@
 
 
 /*общие стили*/
+
+*{
+	outline: 1px solid red;
+}
+
+
 html,
 body {
   margin: 0;
@@ -72,6 +78,7 @@ a {
   width: 940px;
   margin: 0 auto; 
   padding: 0 0;
+  background-color: rgba(256, 256, 0, 0.2);
 }
 
 .visually-hidden {
@@ -85,11 +92,15 @@ a {
   overflow: hidden;
 }
 
+svg {
+  opacity: 0.3;
+  color: #ffffff;
+}
+
 /*ХЕДЕР*/
 
 .main-header {
   margin-bottom: 59px;
-  min-height: 320px;
 }
 
 /*логитип, поиск, закладки, корзина, сдалать заказ*/
@@ -214,6 +225,11 @@ a {
   color: #000000;
   background-color: #ffffff;
 }
+
+.search:before {
+	background: url("../img/icon-cart.svg") no-repeat;
+}
+
 .register-back:hover,
 .register-back:focus,
 .login-back:hover,
@@ -257,6 +273,8 @@ a {
   display: flex;
   flex-direction: row;
   margin-left: 0px;
+  justify-content: space-evenly;
+ 
 }
 
 .main-menu li {
@@ -268,7 +286,7 @@ a {
   padding-left: 29px;
   padding-top: 22px;
   padding-bottom: 26px;
-  padding-right: 28px;
+  padding-right: 25px;
   margin-bottom: 60px; 
 }
 
@@ -355,6 +373,13 @@ a {
 }
 
 /*Копирайт, социальные сети, обратная связь, разработано*/
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 
 .footer-copyright-back {
 	background-color: #293449;
@@ -398,10 +423,18 @@ a {
 /*MAIN*/
 
 /*категории и слайды*/
+.materials-tools-technics {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0px;
+  margin-right: 0px;
+  justify-content: space-between;
+  padding-left: 0px;
+ }
 
 .materials-tools-technics,
 .discounts-delivery {
-  margin-left: 94px;
+  margin-left: 0px;
 }
 
 .materials-tools-technics li,
@@ -409,19 +442,15 @@ a {
   font-size: 24px;
   color: #ffffff;
   font-weight: bold; 
-  width: 300px;
+  width: 280px;
   height: 123px;
-  margin-right: 20px;
+  margin-right: 0px;
+                                     margin-left: 0;
   padding-left: 23px;
-  padding-top: 26px;
+  padding-top: 26px;    
 }
 
-.materials-tools-technics {
-  display: flex;
-  flex-direction: row;
-  margin-left: 0;
-  justify-content: space-between;
- }
+
  
 .materials {
   background-color: #ffbf47;
@@ -461,7 +490,7 @@ a {
   opacity: 0.3; 	
 }
 
-.discounts-delivery-slides {
+.delivery-slides-wrapper {
   display: flex;
   flex-direction: row;
   margin-left: 0;
@@ -483,10 +512,12 @@ a {
 
 .discounts-delivery {
   display: flex;
-  flex-direction: column;
+/*  flex-direction: column;
   margin-left: 0;
-  justify-content: space-between;
+  justify-content: space-between;*/
   margin-bottom: 5px;
+  width: 300px;
+  background-color: grey;
 }
 
 .discounts {
@@ -506,6 +537,10 @@ a {
 }
 
 /*популярные товары и производители*/
+.brands-back {
+	margin-bottom: 65px;
+}
+
 .popular-back h2,
 .brands-back h2 {
   background-color: #f9f5f0;
@@ -529,12 +564,14 @@ a {
 }
 /*популярные производители*/
 .brands {
-  display: inline-block;
-  padding-top: 46px; 
-  width: 940px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  padding-top: 46px;   
   margin-left: 0px;
-  margin-right: 1px;
-  display: inline;
+  margin-right: 0px;
 }
 /*.popular .button-goods {
   position: absolute;
@@ -559,12 +596,16 @@ a {
   display: inline-block;
   width: 220px;
   height: 145px;
-  margin-right: 20px;
+  margin-right: 8px; 
   margin-bottom: 20px;
-  margin-top: 20px;
+/*  margin-top: 20px;*/
   text-align: center;
   border: solid 1px #e5e5e5;
   background-color: #ffffff;
+}
+
+.brands a:nth-child(4n) {
+	margin-right: 0;
 }
 
 .brand:before {
@@ -755,6 +796,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
   }
   
 .filter-form {
@@ -924,10 +966,7 @@ a {
   color: #000000;
 }
 
-.catalog {
-	margin-top: 10px;
-	outline: 1px solid green;
-}
+
 
 .filter-option {
   margin-bottom: 19px;
@@ -1050,6 +1089,7 @@ a {
   
 }
 .catalog-items-main {
+	                       
   width: 940px;
   margin: 20px 0;
 }
@@ -1057,6 +1097,10 @@ a {
 .catalog-items {
   width: 700px;
   margin: 20px 0;
+}
+
+.catalog-items-main .row {
+  display: flex;
 }
 
 .catalog-items .row {
