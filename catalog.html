@@ -9,38 +9,37 @@
         <title>HTML Academy: Техномарт</title>
     </head>
     <body>
-        <header class="main-header">
-			<section class="menu-order">
-			    <div class="menu container">
-				    <div class="logo-search">
-    			        <a href="index.html" class="header-logo">
- 					        <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт">
-				        </a>
-				        <form class="search" method="GET" action="https://echo.htmlacademy.ru/">
-    				        <label>
-    					        <a href="search.html">Поиск:</a>
-					            <input type="text" placeholder="Перфоратор">
-					        </label>
-				        </form>
-				    </div>
-					    <ul class="header-order-navigation">
-                            <li><a class="main-button" href="marks.html">Закладки: 0</a></li>
-                            <li><a class="basket" href="basket.html">Корзина: 10</a></li>
-                            <li><a class="make-order-button" href="order.html">Оформить заказ</a></li>
-		                </ul>
-					</div>
-				</div>
+        <header class="header">
+			<section class="menu-order-back">
+			    <div class="menu-order container">
+    			    <a class="header-logo">
+ 					    <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт">
+				    </a>
+                    <form action="/" method="post" class="search-form">
+                        <input type="text" name="search-form" class="search-form-input" placeholder="Поиск:" aria-label="Кнопка поиска">
+                        <!-- <button type="submit" name="submit-btn" class="header__search-form-button" aria-label="Кнопка поиска"></button> -->
+                    </form>
+                    <a class="user-button bookmarks-button" href="#" title="Закладки">
+                        <img class="user-button-icon" src="img/icon-bookmark-white.svg" alt="Закладки" width="15" height="15">
+                        <span class="user-button-text">Закладки: 0</span>
+                    </a>
+                    <a class="button full-cart-button" href="#" title="Корзина">
+                        <img class="user-button-icon" src="img/cart-icon-white.svg" alt="Корзина" width="15" height="15">
+                        <span class="user-button-text">Корзина: 0</span>
+                    </a>
+                    <a class="user-button make-order-button" href="order-form.html" title="Оформить заказ">Оформить заказ</a>
+                </div>
 			</section> 
-	        <section class="top-background">
+	        <section class="top-back">
     	        <div class="container">
 					<div class="contacts-account">
 					    <h1 class="shop-name">Интернет-магазин<br> 
 				        строительных материалов<br>
 				        и инструментов для ремонта</h1>
 		                <ul class="header-contacts"> 
-		                    <div>
+						    <div class="phone-back">
     		                    <li class="phone">+7 (812) 555-05-55</li>
-					        </div>
+							</div>
 		                    <li class="address"> г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</li>
 		                </ul>
                         <ul class="user-navigation-catalog">
@@ -52,7 +51,7 @@
 		                </ul>
 					</div>
 	                <nav>
-	                    <ul class="main-menu container">
+	                    <ul class="nav-menu container">
 	                        <li><a href="main.html">Главная</a></li>
                             <li><a href="company.html">Компания</a></li>
                             <li><a href="catalog.html">Каталог</a></li>
@@ -152,7 +151,6 @@
                         <div class="catalog-items">
                             <div class="row">
                                 <div class="catalog-item">
-                                    <div class="flag flag-new">новинка</div>
                                     <div class="actions">
                                         <a href="#" class="buy">Купить</a>
                                         <a href="#" class="bookmark">В закладки</a>
@@ -173,7 +171,7 @@
                                     <div class="price">25500 Р.</div>
                                 </div>
                                 <div class="catalog-item">
-                                    <div class="flag flag-new">новинка</div>
+                                    <span class="flag flag-new"></span>
                                     <div class="actions">
                                         <a href="#" class="buy">Купить</a>
                                         <a href="#" class="bookmark">В закладки</a>
@@ -196,7 +194,7 @@
                                     <div class="price">15500 Р.</div>
                                 </div>
 						        <div class="catalog-item">
-    						        <div class="flag flag-new">новинка</div>
+    						        <span class="flag flag-new"></span>
                                     <div class="actions">
                                         <a href="#" class="buy">Купить</a>
                                         <a href="#" class="bookmark">В закладки</a>
@@ -219,7 +217,7 @@
 					        </div>
 					        <div class="row">
                                 <div class="catalog-item">
-                                    <div class="flag flag-new">новинка</div>
+                                    <span class="flag flag-new"></span>
                                     <div class="actions">
                                         <a href="#" class="buy">Купить</a>
                                         <a href="#" class="bookmark">В закладки</a>
@@ -240,7 +238,6 @@
                                     <div class="price">25500 Р.</div>
                                 </div>
                                 <div class="catalog-item">
-                                    <div class="flag flag-new">новинка</div>
                                     <div class="actions">
                                         <a href="#" class="buy">Купить</a>
                                         <a href="#" class="bookmark">В закладки</a>
