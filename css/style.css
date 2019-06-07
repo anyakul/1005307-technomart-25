@@ -622,7 +622,7 @@ padding-right: 49px;
 	padding-left: 43px;
 }
 
-.catalog-item .flag {
+.product-item .flag {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -635,7 +635,7 @@ padding-right: 49px;
   z-index: 20;
 }
 
-.catalog-item .flag-new {
+.product-item .flag-new {
   background-image: url("../img/new-flag.png") no-repeat 0 0;
 }
 /*
