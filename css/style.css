@@ -739,7 +739,7 @@ background-color: #212a3a
   background-size: 44px 65px;
   background-position: 213px 31px;
 }
-
+ 
 .product-item .flag-new::after {
 	content: "";
 	position: absolute;
