@@ -734,10 +734,10 @@ background-color: #212a3a
   background-color: #ffbf47;
 }
 .product-item-materials {
-  background-image: url('../img/icon3.svg');
+  background-image: url('../img/icon-1.svg');
   background-repeat:  no-repeat;
   background-size: 44px 65px;
-  background-position: 43px 31px;
+  background-position: 213px 31px;
 }
 
 .product-item .flag-new::after {
@@ -756,22 +756,25 @@ background-color: #212a3a
   background-color: #3bbce3;
 }
 
-.product-item-tools img {
-	padding-right: 28px;
-	padding-top: 33px;
-	padding-left: 37px;
+.product-item-tools {
+  background-image: url('../img/icon-2.svg');
+  background-repeat:  no-repeat;
+  background-size: 75px 61px;
+  background-position: 197px 33px;
 }
 
 .product-item-technics {
   background-color: #dc91d8;
 }
 
-.product-item-technics img {
-	padding-right: 31px;
-	padding-top: 31px;
-	padding-left: 33px;
-	background-position: 31px 31px;
+.product-item-technics {
+  background-image: url('../img/icon-3.svg');
+  background-repeat:  no-repeat;
+  background-size: 78px 62px;
+  background-position: 191px 31px;
 }
+
+
 
 .category-button {
   font-size: 14px;
@@ -916,10 +919,11 @@ padding-left: 0px;
   background-color: #8ed78f;
 }
 
-.product-item-discounts img {
-	padding-right: 45px;
-	padding-top: 26px;
-	padding-left: 38px;
+.product-item-discounts {
+  background-image: url('../img/icon-4.svg');
+  background-repeat:  no-repeat;
+  background-size: 59px 72px;
+  background-position: 196px 26px;
 }
 
 
@@ -927,10 +931,11 @@ padding-left: 0px;
   background-color: #ffc047;
 }
 
-.product-item-delivery img {
-	padding-right: 31px;
-	padding-top: 32px;
-	padding-left: 38px;
+.product-item-delivery {
+  background-image: url('../img/icon-5.svg');
+  background-repeat:  no-repeat;
+  background-size: 78px 63px;
+  background-position: 191px 32px;
 }
 
 /*популярные товары и производители*/
