@@ -1429,6 +1429,8 @@ padding-right: 53px;
 
 .filter-item-brands {
 	margin-top: 25px;
+	padding-bottom: 27px;
+
 }
 
 .brands input:disabled,
@@ -1476,12 +1478,18 @@ padding-right: 53px;
   line-height: 18px;
 }
 
-.filter-option {
-  margin-bottom: 19px;
+.filter-option-brands:not(.power) {
+  padding-bottom: 19px;
   padding-left: 35px;
 }
 
-.filter-option label {
+.filter-option-brands:last-child {
+  padding-bottom: 27px;
+  padding-left: 35px;
+  border-bottom: 1px #cccccc solid;
+}
+
+.filter-option-brands label {
   position: relative;
   text-transform: uppercase;
   display: block;
@@ -1516,7 +1524,7 @@ padding-right: 53px;
   width: 12px;
   height: 12px;
   
-  background-image: url("img/cross.svg");
+  background-image: url('../img/checkbox-on.svg');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1553,11 +1561,6 @@ padding-right: 53px;
 
   background-color: #000000;
   border-radius: 50%;
-}
-.filter-input:disabled + label {
-  color: #000000;
-
-  opacity: 0.5;
 }
 
 .show-result {
