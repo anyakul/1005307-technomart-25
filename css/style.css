@@ -186,6 +186,10 @@ a {
 	padding-bottom: 12px;
 }
 
+.menu-order-button a {
+	position: absolute;
+}
+
 .menu-order-button:hover,
 .menu-order-button:focus {
     background-color: #212a3a;
@@ -201,6 +205,8 @@ a {
 .full-cart-button svg {
 	opacity: 0.3;
 	padding-right: 17px;
+	position: relative;
+	top: 1px;
 }
 
 .menu-order-button:hover svg,
@@ -287,7 +293,13 @@ a {
   padding-bottom: 7px;
 }
 
+.phone span {
+	position: absolute;
+}
+
 .phone-back svg {
+  position: relative;
+  top: 1px;
   color: #B7BFC8;
   padding-left: 15px;
   padding-right: 40px;
@@ -338,7 +350,13 @@ a {
     margin-right: 10px;
 }
 
+.sign-in-button span {
+	position: absolute;
+}
+
 .sign-in-button svg {
+	position: relative;
+	top: 2px;
     padding-left: 14px;
 	padding-right: 13px;
 	color: #c5c5c5
@@ -358,11 +376,20 @@ a {
 	padding-top: 10px;
 	padding-bottom: 12px;
 }
+
+.user-name span {
+	position: absolute;
+}
 .sign-in-button svg,
 .sign-up-button svg,
 .user-name svg,
 .phone svg {
     fill: #c5c5c5
+}
+
+.user-name svg {
+	position: relative;
+	top: 2px;
 }
 
 
@@ -1245,12 +1272,15 @@ padding-right: 53px;
     text-transform: uppercase;
 }
 
-.breadcrumbs-icon-home:hover g,
-.breadcrumbs-icon-home:focus g {
+.breadcrumbs-icon-home:hover polygon,
+.breadcrumbs-icon-home:focus polygon,
+.breadcrumbs-icon-home:hover path,
+.breadcrumbs-icon-home:focus path {
     fill: #32425C;
 }
 
-.breadcrumbs-icon-home:active g {
+.breadcrumbs-icon-home:active polygon,
+.breadcrumbs-icon-home:active path {
     fill: #C1C6CE;
 }
 
@@ -1475,7 +1505,7 @@ padding-right: 53px;
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -35px;
   top: 0;
   width: 16px;
   height: 16px;
@@ -1545,7 +1575,7 @@ padding-right: 53px;
 	padding-bottom: 14px;
 	padding-left: 39px;
 	padding-right: 39px;
-margin-top: 65px;
+margin-top: 60px;
 outline: none;	
 }
 
@@ -1938,25 +1968,4 @@ opacity: 0.3;
   font-size: 14px;
   color: #000000;
   text-transform: uppercase;
-}
-
-
-.catalog-item .actions .buy:hover,
-.catalog-item .actions .buy:focus {
-  background-color: #5fbb2d;
-}
-.catalog-item .actions .buy:active {
-	background-color: #518534;
-	box-shadow: none;
-}
-
-.catalog-item .actions .bookmark:hover,
-.catalog-item .actions .bookmark:focus {
-	border: solid 3px #32425c;
-}
-
-
-.catalog-item .actions .bookmark:active {
-opacity: 0.3;
-  border: solid 3px #32425c;
 }
