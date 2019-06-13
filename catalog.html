@@ -164,10 +164,10 @@
 				        <fieldset class="filter-item filter-item-power">
 				            <legend>Питание:</legend>
 				            <ul class="power-list">
-				                <li class="filter-option">
+				                <li class="filter-option-power">
 						            <label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-group" value="battery" checked>Аккумуляторные</label>
 						        </li>
-					            <li class="filter-option">
+					            <li class="filter-option-power">
 						            <label><input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-group" value="utility">Сетевые</label>
 						        </li>
 					        </ul>
@@ -175,12 +175,22 @@
 				        <button class="show-result" type="submit">Показать</button>
 			        </form>
 				    <div class="sorted-goods-pagination">
-			            <div class="order-by">
-			                <p>Сортировка</p>
-				            <a href="#" class="by-price">По цене</a>
-				            <a href="#" class="by-type">По типу</a>
-				            <a href="#" class="by-function">По функционалу</a>
-				        </div>
+                        <div class="catalog-sort">
+                            <h3 class="catalog-sort-title">Сортировка:</h3>
+                            <a href="#" title="По цене" class="catalog-sort_js-button active">По цене</a>
+                            <a href="#" title="По типу" class="catalog-sort_js-button">По типу</a>
+                            <a href="#" title="По функционалу" class="catalog-sort_js-button">По функционалу</a>
+                            <a href="/" title="По возрастанию" class="catalog-sort_js-button triangle-button active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                    <path fill="#231F20" d="M5.5 0L0 10h11z" />
+                                </svg>
+                            </a>
+                            <a href="/" title="По убыванию" class="catalog-sort_js-button triangle-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                    <path fill="#231F20" d="M5.5 10L0 0h11" />
+                                </svg>
+                            </a>
+                        </div>
 			            <div class="catalog-items">
 			                <p class="visually-hidden">Перфораторы</p>
                             <div class="row">
@@ -286,12 +296,20 @@
                                 </div>
 					        </div>
 				        </div>
-                	   <ul class="pagination-list container">
-                            <li class="pagination-item pagination-item-active"><a href="#">1</a></li>
-                            <li class="pagination-item"><a href="#">2</a></li>
-                            <li class="pagination-item"><a href="#">3</a></li>
-                            <li class="pagination-item"><a href="#">Следующая</a></li>
-			            </ul>
+                        <ul class="pagination-list">
+                            <li class="pagination-item active">
+                                <a class="catalog-button">1</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="catalog-button">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="catalog-button">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="catalog-button">Следующая</a>
+                            </li>
+                        </ul>
 					</div>
 				</section>
 		    </div>
