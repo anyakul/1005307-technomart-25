@@ -112,19 +112,43 @@
 					    </div>		
                     </div>	
                     <div class="delivery-discounts-slider">				
-				        <div class="slides">
-				            <img src="img/slider-image.jpg" width="620" height="266" alt="Дрели">
-							<span class="name"> Дрели</span>
-					        <span class="comment">Соседям на радость!<span>  
-				     	    <a class="button" href="catalog.html">Открыть каталог</a>   
-				        </div>
-						<!--<div class="slides perforators">
-				            <img src="img/slide-image.jpg" width="620" height="266" alt="Дрели">
-							<span class="name"> Перфораторы</span>
-					        <span class="comment">Настоящие мужские игрушки<span>  
-				     	    <a class="button" href="catalog.html">Открыть каталог</a>   
-				        </div>-->
-					    <div class="discounts-delivery">					     
+				        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+                        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+                        <div class="site-wrapper">
+                            <div class="slider">
+                                <div>
+                                    <label class="slider-controls-left" for="product-1">
+									    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
+                                            <polygon fill="#FFFFFF" points="19.83,-0.035 21.919,2.064 4.13,19.947 21.977,37.886 19.887,39.985 -0.048,19.947 "/>
+                                        </svg>
+									</label>
+                                    <label class="slider-controls-right" for="product-2">
+									    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
+                                            <g id="Layer_1">
+                                            </g>
+                                            <g id="Layer_2">
+	                                            <polygon fill="#ffffff" points="2.098,-0.035 0.009,2.064 17.798,19.947 -0.048,37.886 2.041,39.985 21.976,19.947 	"/>
+                                            </g>
+                                        </svg>
+									</label>
+                                </div>
+							    <ul class="slider-list">
+				                    <li class="slides" id="slide1">
+									    <img src="img/slider-image.jpg" width="620" height="266" alt="Дрели">
+							            <span class="name"> Дрели</span>
+					                    <span class="comment">Соседям на радость!<span>  
+				     	                <a class="button" href="catalog.html">Открыть каталог</a>   
+								    </li>
+						            <li class="slides" id="slide2">
+				                        <img src="img/slide-image.jpg" width="620" height="266" alt="Дрели">
+							            <span class="name"> Перфораторы</span>
+					                    <span class="comment">Настоящие мужские игрушки<span>  
+				     	                <a class="button" href="catalog.html">Открыть каталог</a>   
+				                    </li>
+							     </ul>
+						    </div>
+					    </div>
+						<div class="discounts-delivery">					     
                             <div class="category-item category-item-discounts">
 							    <div class="category-item-text">
 					                <div>Скидки 50%</div>
@@ -138,7 +162,8 @@
 							    </div>
 					        </div>		
      				    </div>
-				    </div>		 
+				 	
+                   			
 			    </section>
 			    <section class="popular-goods-back">
                     <div class="popular-item">
@@ -289,7 +314,7 @@
 				    <a class="visually-hidden">
 				        <img src="img/map.png" width="940" height="446.2px" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				    </a>
-				    <a class="button write-us-button" href="contacts.html">Заблудились? Напишите нам!</a>
+				    <button class="button write-us-button" href="contacts.html">Заблудились? Напишите нам!</button>
 				</div>
 			</section>
 	    </main>
@@ -361,41 +386,25 @@
 			    </div>
 			</section>
 		</footer>
-        <form class="message" method="POST" action="https://echo.htmlacademy.ru/">
-			<ul class="message-input">
-                <li>
-				    <label>Ваше имя:<input class="message" type="text" name="name" placeholder="Имя Фамилия"></label>
-				</li>
-                <li>
-				    <label>Ваш e-mail:<input class="message" type="text" name="email" placeholder="email@example.com"></label>
-			    </li>
-                <li>
-				    <label>Текст письма:<textarea>В свободной форме</textarea></label>
-				</li>
-            </ul>					
-			<div class="button-in-form">
- 		        <button class="button" type="submit">Отправить</button>
-			</div>
-            <span class="modal-close">x</span>
-	    </form>
+		<section class="modal modal-message">
+            <form class="message-form" method="POST" action="https://echo.htmlacademy.ru/">
+			    <div class="form-container">
+			        <div class="name-email">
+	    			    <label>Ваше имя:<input class="message" type="text" name="name" placeholder="Имя Фамилия"></label>
+				        <label>Ваш e-mail:<input class="message" type="text" name="email" placeholder="email@example.com"></label>
+				    </div>
+				    <div class="text-message">
+				        <label>Текст письма:<textarea>В свободной форме</textarea></label>				
+ 		            </div>
+				</div>
+				<div class="form-button-background">
+				    <div class="form-container">
+				        <button class="button form-button" type="submit">Отправить</button>
+					</div>
+				</div>
+                <button class="modal-close" type="button">Закрыть</button>
+	        </form>
+		</section>
+		<link href="js/script.js">
 	</body>
 </html>
-<!--li class="slide-radio">
-						        <ul class="slide-btn">
-						            <li>Дрели</li>
-							        <li>Соседям на радость!</li>
-								    <li><img src="img/slider-image.jpg" width="620" height="266" alt="Дрели"></li>
-								    <li><a class="button" href="catalog.html">Открыть каталог</a></li>
-							    </ul>
-					    </li>
-					    <li class="slide-radio perforators">
-					        <button>
-						        <ul class="slide-btn">
-							        <li>Перфораторы</li>
-								    <li>Настоящие мужские игрушки</li>
-								    <li><img src="img/slide-image.jpg" width="620" height="266" alt="Перфораторы"></li>
-								    <li><a class="button" href="catalog.html">Открыть каталог</a></li>
-							    </ul>
-						    </button>
-					    </li>
-					</ul>-->

@@ -748,6 +748,7 @@ padding-right: 53px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 266px;
 }
 
 .category-item {
@@ -843,8 +844,6 @@ padding-right: 53px;
 .slides {
 	display: inline-block;
 	position: relative;
-	width: 620px;
-	height: 266px;
     padding-left: 0px;
 }
 
@@ -886,29 +885,46 @@ padding-right: 53px;
 	display: none;
 }
 
-.slides::before {
-  content: "";
+.slider-controls input {
+	display: none;
+}
+
+.slider-controls-left {
   position: absolute;
   top: 114px;
   left: 24px;
-  z-index: 1;
-  width: 22px;
-  height: 40px;
-  background-image: url("../img/icon-left.svg");
-  background-repeat: no-repeat;
+  z-index: 20;
+  font-size: 0;
 }
 
-.slides::after {
-  content: "";
+.slider-controls-right {
   position: absolute;
   top: 114px;
-  right: 21px;
-  z-index: 1;
-  width: 22px;
-  height: 40px;
-  background-image: url("../img/icon-right.svg");
-  background-repeat: no-repeat;
+  right: 20px;
+  z-index: 20;
+  font-size: 0;
 }
+
+.slider {
+  position: relative;
+  
+  text-align: center;
+  color: #ffffff;
+}
+.slides {
+  display: none;
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"], {
+  background-color: #ffffff;
+}
+
 
 /*Популярные товары и производители*/
 
@@ -1299,6 +1315,7 @@ padding-right: 53px;
 	padding-top: 32px;
 	padding-bottom: 34px;
 	padding-left: 30px;	 
+	margin-bottom: 0;
 }
 
 /*Каталог*/
@@ -1344,18 +1361,21 @@ padding-right: 53px;
   padding: 0;
 }
 
+.filter-item-price legend {
+	margin-bottom: 12px
+} 
+
 .filter-item legend {
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 13px;
 }
 
 /*фильтр цены*/
 
 .filter-item-price {
-  margin-top: 15px;
+  margin-top: 9px;
 }
 
 .filter-item-price input {
@@ -1368,7 +1388,7 @@ padding-right: 53px;
   height: 41px;
   background-color: #f7f3ec;
   border-radius: 5px;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -1461,87 +1481,113 @@ padding-right: 53px;
 
 /*фильтр производители и питание*/
 
-.filter-item-brands {
-	margin-top: 21px;
-	padding-bottom: 22px;
-}
-
-.brands input:disabled,
-.power input:disabled  {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.filter-item-brands legend {
-	margin-bottom: 19px;
-}
-
-.filter-option-brands,
-.filter-option-power {
-	font-size: 15px;
-	line-height: 20px;
-  padding-bottom: 19px;
-  padding-left: 35px;
-}
-
-.filter-option-brands:last-child {
-  padding-bottom: 24px;
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: none;
+  padding-top: 16px;
   border-bottom: 1px #cccccc solid;
 }
 
-.filter-option-brands label,
-.filter-option-power label {
+.filter fieldset:first-child {
+  margin-bottom: 35px;
+}
+
+.filter-item-brands legend {
+  margin-bottom: 17px;
+  font-family: PTSans;
+  font-size: 17px;
+  line-height: 30px;
+  padding-left: 0;
+  padding-top: 17px;
+}
+
+.filter ul {
+  padding: 0;
+  margin: 0;
+  
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-option {
+  margin-bottom: 9px;
+  padding-left: 35px;
+}
+
+.filter-option label {
   position: relative;
   text-transform: uppercase;
   display: block;
-
+  padding-bottom: 	15px;
   cursor: pointer;
   user-select: none;
+  font-family: PTSans;
+  font-size: 15px;
 }
-
+ .filter-option-brands:last-child {
+ padding-bottom: 11px;
+ border-bottom: 1px #cccccc solid;
+}
 .filter-input:hover + label,
 .filter-input:focus + label {
   color: #663d15;
 }
+
+.filter-option-power {
+	padding-bottom: 2px;
+}
+
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -35px;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  background-image: url('../img/checkbox-off.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  border: 2px solid #000000;
+  top: -3px;
+
+  width: 23px;
+  height: 23px;
+  border: 2px solid #c5c5c5;
+}
+.filter-item-power legend {
+  margin-bottom: 17px;
+  font-family: PTSans;
+  font-size: 17px;
+  line-height: 30px;
+  padding-left: 0;
+  padding-top: 10px;
 }
 
-.filter-input-checkbox:checked + label::after {
+
+.filter-input-checkbox:checked + label::before {
   content: "";
-
   position: absolute;
-  top: 4px;
-  left: -38px;
-
-  width: 12px;
-  height: 12px;
-  
+  top: -3px;
+  left: -35px;
+  width: 27px;
+  height: 23px;
   background-image: url('../img/checkbox-on.svg');
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  border: 0px solid #c5c5c5;;
+}
+
+
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
 }
 
 .filter-input-radio + label::before {
   content: "";
 
   position: absolute;
-  left: -42px;
-  top: -1px;
+  left: -36px;
+  top: -3px;
 
-  width: 16px;
-  height: 16px;
-  
-  border: 2px solid #000000;
-  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-image: url('../img/radio-off.svg');
 }
 
 .filter-input:disabled + label {
@@ -1550,19 +1596,18 @@ padding-right: 53px;
   opacity: 0.5;
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked + label::before {
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: -3px;
   left: -36px;
 
-  width: 8px;
-  height: 8px;
-
-  background-color: #000000;
-  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-image: url('../img/radio-on.svg');
 }
+
 
 .show-result {
 	  border: solid 1px #e5e5e5;
@@ -1571,11 +1616,11 @@ padding-right: 53px;
   font-family: "PTSans", Arial, sans-serif;
   font-size: 13px;
   color: #000000;
-	padding-top: 15px;
-	padding-bottom: 14px;
+	padding-top: 10px;
+	padding-bottom: 11px;
 	padding-left: 39px;
 	padding-right: 39px;
-margin-top: 60px;
+margin-top: 55px;
 outline: none;	
 }
 
@@ -1931,41 +1976,148 @@ opacity: 0.3;
 
 
 
-/*Форма отправления письма и добавлено в корзину*/
 
-.message,
-.added-to-basket {
-	background-color: #ffffff;
-	color: #000000;
-	box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-}
+/*всплывающие окна*/
 
-.added-to-basket p {
-  font-size: 27px;
+.modal {
+  position: fixed;
+  font-family: cuprum;
+  
   color: #000000;
-}
 
-.message li {
-  font-size: 18px;
-  color: #000000;
-}
-.message input,
-.message textarea {
-  box-shadow: none;
-  font-family: "PTSans", Arial, sans-serif;
-  font-size: 13px;
-  color: #999999;
-}
-.message input:focus,
-.message textarea:focus {
-  border: solid 2px #ee3643;
-}
-.button-in-form {
-  background-color: #f1f1f1;
-}
-.continue {
   background-color: #ffffff;
-  font-size: 14px;
-  color: #000000;
-  text-transform: uppercase;
+  border-top: 7px #ee3643 solid;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal-message {
+  top: 20px;
+  width: 620px;
+  height: 360px;
+  margin-left: 290px;
+  display: none;
+}
+
+.form-container {
+	width: 480px;
+	padding-left: 80px;
+}
+
+
+.modal-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+
+  background-color: #ee3643;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.message-form label {
+	font-size: 18px;
+}
+
+.message-form input {
+	display: block;
+	box-shadow: none;
+	margin-top: 8px;
+	width: 204px;
+	height: 38px;
+	padding-left: 16px;
+	border: 2px solid #dee3e4;
+	border-radius: 5px;
+	font-size: 13px;
+	font-family: cuprum;
+	margin-right: 20px;
+}
+
+.name-email {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20px;
+	margin-top: 55px;
+}
+
+
+.message-form input:hover,
+.message-form input:focus,
+.message-form input:active,
+.message-form textarea:hover,
+.message-form textareat:focus,
+.message-form textarea:active {
+  outline: none;
+}
+
+.message-form textarea {
+	display: block;
+	box-shadow: none;
+	margin-top: 8px;
+	width: 445px;
+	height: 114px;
+	padding-left: 16px;
+	color: #a9a9a9;
+	border: 2px solid #dee3e4;
+	border-radius: 5px;
+	padding-top: 13px;
+	font-size: 13px;
+	font-family: cuprum;
+	resize: none;
+}
+
+
+.form-button-background {
+	background-color: #f4f4f4;
+	height: 112px;
+    margin-top: 37px;
+	padding-left: 0px;
+	width: 620px;
+	text-align: left;
+}
+
+.form-button {
+	font-size: 14px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #ee3643;
+	text-align: center;
+	padding-top: 9px;
+    padding-bottom: 10px;
+	width: 470px;
+	margin-top: 37px;
+	margin-bottom: 37px;
+	vertical-align: top;
+	
 }
