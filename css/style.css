@@ -915,11 +915,11 @@ padding-right: 55px;
   margin-right: 10px;
 }
 
-.slider-controls-round:checked {
-  background-color: #ffffff; 
-  width: 10px;
-  height: 10px
- }
+.slider-controls-round:active,
+#product-1:checked~.slider-controls-rounds .slider-controls-round--1,
+#product-2:checked~.slider-controls-rounds .slider-controls-round--2 {
+	background-color: #ffffff;
+}
   
 .slider-controls-left {
   position: absolute;
@@ -935,6 +935,11 @@ padding-right: 55px;
   right: 20px;
   z-index: 20;
   font-size: 0;
+}
+
+#product-1:checked ~ .slider-controls-round label[for='slide-1'], 
+#product-2:checked ~ .slider-controls-round label[for='slide-2'] { 
+background-color: #ffffff; 
 }
 
 #product-1:checked ~ .slider-list .slider-item:nth-child(1) {
@@ -1188,7 +1193,7 @@ padding-right: 55px;
 	padding-right: 44px;
 	padding-left: 44px;
 }
-
+.service-label:active,
 #delivery-slide:checked~.service-list .service-slide:nth-of-type(1),
 #guarantee-slide:checked~.service-list .service-slide:nth-of-type(2),
 #loan-slide:checked~.service-list .service-slide:nth-of-type(3) {
