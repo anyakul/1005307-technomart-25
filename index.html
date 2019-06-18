@@ -19,14 +19,14 @@
                         <input type="text" name="search-form" class="search-form-input" placeholder="Поиск:" aria-label="Кнопка поиска">
                         <!-- <button type="submit" name="submit-btn" class="header__search-form-button" aria-label="Кнопка поиска"></button> -->
                     </form>
-                    <a class="menu-order-button menu-order-button-marks" href="#" title="Закладки">
+                    <a class="menu-order-button menu-order-button-marks" href="marks.html" title="Закладки">
                         <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	                        width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
                             <path fill="#ffffff" d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765,C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
                         </svg>
-                        <span>Закладки: 0</span>
+                        Закладки: 0
                     </a>
-                    <a class="menu-order-button" href="#" title="Корзина">
+                    <a class="menu-order-button" href="cart.html" title="Корзина">
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						    width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
 						    <g>
@@ -35,9 +35,9 @@
 						        <polygon fill="#ffffff" points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	"/>
 						    </g>
 					    </svg>
-                        <span>Корзина: 0</span>
+                        Корзина: 0
                     </a>
-                    <a class="make-order-button" href="order-form.html" title="Оформить заказ">Оформить заказ</a>
+                    <a class="make-order-button" href="cart.html" title="Оформить заказ">Оформить заказ</a>
                 </div>
 			</section> 
 	        <section class="top-back">
@@ -171,7 +171,7 @@
 			    <section class="popular-goods-back">
                     <div class="popular-item">
                         <h2 class="popular-item-title">Популярные товары:</h2>
-                        <a class="button popular-item-button" href="#" title="">Все популярные товары</a>
+                        <a class="button popular-item-button" href="catalog.html" title="">Все популярные товары</a>
                     </div>
   					<div class="catalog-items-main">
                         <div class="catalog-item">
@@ -396,7 +396,7 @@
 				        <label>Ваш e-mail:<input class="message" type="text" name="email" placeholder="email@example.com"></label>
 				    </div>
 				    <div class="text-message">
-				        <label>Текст письма:<textarea placeholder="В свободной форме"></textarea></label>				
+				        <label>Текст письма:<textarea name="message" placeholder="В свободной форме"></textarea></label>				
  		            </div>
 				</div>
 				<div class="form-button-background">
@@ -407,59 +407,6 @@
                 <button class="modal-close" type="button">Закрыть</button>
 	        </form>
 		</section>	
-<script>
-  var link = document.querySelector(".write-us-button");
-  
-  var popup = document.querySelector(".modal-message");
-  var close = popup.querySelector(".modal-close"); 
-/*  var form = popup.querySelector("form");
-  var name = popup.querySelector("[name=name]");
-  var email = popup.querySelector("[name=email]");
-  
-  var isStorageSupport = true;
-  var storage = "";
-  
-  try {
-    storage = localStorage.getItem("name");
-  } catch (err) {
-    isStorageSupport = false;
-  } */
-  
- link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    
- /*   if (storage) {
-      name.value = storage;
-      email.focus();
-    } else {
-      name.focus();
-    }   */
-  });
-  
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-  });
- /* form.addEventListener("submit", function (evt) {
-    if (!name.value || !email.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести имя и email");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("name", name.value);
-      }
-    }
-  });
-  
- window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-      }
-    }
-  }); */
-</script>	  
+        <script src="js/script.js"></script>
 	</body>
 </html>

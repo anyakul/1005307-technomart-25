@@ -35,7 +35,7 @@
 					    </svg>
                         <span>Корзина: 10</span>
                     </a>
-                    <a class="make-order-button" href="order-form.html" title="Оформить заказ">Оформить заказ</a>
+                    <a class="make-order-button" href="#" title="Оформить заказ">Оформить заказ</a>
                 </div>
 			</section> 
 	        <section class="top-back">
@@ -64,7 +64,7 @@
                                         <path fill="#c5c5c5" d="M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415 c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277 c0.253,0.798,0.141,1.915-0.517,2.416c-0.95,0.724-3.063,1.654-5.207,2.39S0,18,0,18h20C20,18,20.025,14.901,17.881,14.166z"/>
                                     </svg>
 							    </a>
-                                Равшан Джамшутович
+                                <a href="account.html">Равшан Джамшутович</a>
 							    <a class="logout-icon" href="logout.html">	
 							        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
                                         <g>
@@ -75,8 +75,8 @@
 							    </a>
 							</div>
 							<ul class="user-info-list">
-     		                    <li class="user-info-item"><a href="my-orders.html">Мои заказы</a></li>
-					            <li class="user-info-item"><a href="account.html">Личный кабинет</a></li>
+     		                    <li class="user-info-item"><a href="#">Мои заказы</a></li>
+					            <li class="user-info-item"><a href="#">Личный кабинет</a></li>
 							</ul>
 		                </div>
 					</div>
@@ -108,10 +108,10 @@
 						</a>
 					</li>
                     <li class="breadcrumbs-item">
-                        <a href="catalog.html">Каталог</a>
+                        <a href="#">Каталог</a>
                     </li>
                     <li class="breadcrumbs-item">
-                        <a href="catalog.html">Инструмент</a>
+                        <a href="#">Инструмент</a>
                     </li>
                     <li class="breadcrumbs-item breadcrumbs-item-current">
 					    <a href="#">Перфораторы</a>
@@ -331,7 +331,7 @@
 	        <section class="footer-nav-back">
 			    <div class="container">
 	                <div class="footer-contacts">
-  	  	                <a class="footer-logo-back">
+  	  	                <a href="index.html" class="footer-logo-back">
 	                        <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина Техномарт">
 		                </a>
 		                <address class="footer-address">
@@ -341,17 +341,17 @@
 				    </div>
 		            <div class="footer-navigation">
 		                <ul class="footer-site-navigation">
-                            <li><a href="company.html">Компания</a></li>
-                            <li><a href="news.html">Новости</a></li>
-                            <li><a href="catalog.html">Каталог</a></li>
-                            <li><a href="delivery.html">Доставка</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>	
+                            <li><a href="#">Компания</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Контакты</a></li>	
 		                </ul>
 		                <ul class="footer-catalog-navigation">
 		                    <li><a href="#">Материалы</a></li>
                             <li><a href="#">Техника</a></li>
                             <li><a href="#">Инструмент</a></li>
-                            <li><a href="special-offers.html">Спецпредложения</a></li>
+                            <li><a href="#">Спецпредложения</a></li>
 		                </ul>
 				    </div>
 				</div>
@@ -394,12 +394,18 @@
 			    </div>
 			</section>
 		</footer>
-		<form class="added-to-basket" method="POST" action="https://echo.htmlacademy.ru/">
-		    <p>Товар добавлен в корзину!</p>
-			<div class="button-in-form">
-				<a href="order.html" class="button">Оформить заказ</a>
-			    <a href="catalog.html" class="continue">Продолжить покупки</a>
-			</div>
-		</form>
+        <section class="modal modal-cart">
+			    <div class="form-container">
+				    <h3>Товар добавлен в корзину!</h3>
+				</div>
+				<div class="form-button-background">
+			        <div class="form-container"> 
+				        <a href="#" class="button form-button">Оформить заказ</a>
+						<a href="#" class="form-button-continue">Продолжить покупки</a>
+				 	</div>   
+				</div>
+                <button class="modal-close" type="button">Закрыть</button>
+		</section>	
+		<script src="js/script.js"></script>
 	</body>
 </html>
