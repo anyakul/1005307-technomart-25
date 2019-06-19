@@ -1,4 +1,4 @@
-/*ВСПЛЫВАЮЩЕЕ ОКНО ОТПРАВКА СООБЩЕНИЯ*/
+/*ВСПЛЫВАЮЩЕЕ ОКНО ДОБАВЛЕНИЯ В КОРЗИНУ*/
  var link = document.querySelector(".buy");
   
   var popup = document.querySelector(".modal-cart");
