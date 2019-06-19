@@ -1949,19 +1949,17 @@ background-color: #ffffff;
   left: 50%;
   z-index: 100;
   box-sizing: border-box;
-  width: 620px;
-  min-height: 430px;
+
+
   transform: translateX(-50%) translateY(-50%);
-  display: none;
+
   color: #000000;
   background-color: #ffffff;
-  border-top: 7px #ee3643 solid;
+  
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
-.modal-show {
-    display: block;
-}
+
 
 .form-container {
 	width: 480px;
@@ -2013,10 +2011,33 @@ background-color: #ffffff;
 /*форма отправки сообщения*/
 .modal-message {
 min-height: 430px;
+  width: 620px;
+display: none;
+border-top: 7px #ee3643 solid;
+}
+
+.modal-show {
+    display: block;
 }
 
 .message-form label {
 	font-size: 18px;
+}
+
+.message-form placeholder {
+	font-family: "PT Sans", Arial, sans-serif;
+	display: block;
+	box-shadow: none;
+	margin-top: 8px;
+	width: 200px;
+	height: 38px;
+	padding-left: 16px;
+	color: #a9a9a9;
+	border: 2px solid #dee3e4;
+	border-radius: 5px;
+	font-size: 13px;
+	line-height: 18px;
+	margin-right: 0px;
 }
 
 .message-form input {
@@ -2027,7 +2048,7 @@ min-height: 430px;
 	width: 200px;
 	height: 38px;
 	padding-left: 16px;
-	color: #a9a9a9;
+	color: #000000;
 	border: 2px solid #dee3e4;
 	border-radius: 5px;
 	font-size: 13px;
@@ -2073,7 +2094,8 @@ min-height: 430px;
 .message-form textarea:focus,
 .message-form input:active,
 .message-form textarea:active {
-	border-color: #ee3643
+	border-color: #ee3643;
+	color: #000000;
 }
 
 .message-form placeholder {
@@ -2088,7 +2110,7 @@ min-height: 430px;
 	padding-top: 43px;
 }
 
-.form-button-background {
+.form-button-message-background {
 	background-color: #f4f4f4;
 	height: 112px;
 	padding-bottom: 0px;
@@ -2097,7 +2119,7 @@ min-height: 430px;
 	margin-top: 37px;
 }
 
-.form-button {
+.form-button-message {
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
@@ -2112,4 +2134,78 @@ min-height: 430px;
 /*окно добавления в корзину*/
 .modal-cart {
 	height: 282px;
+	  width: 620px;
+	background-image: url("../img/modal-check.svg");
+	background-repeat: no-repeat;
+	background-position: 70px 48px;
+	border-top: 7px #ee3643 solid;
+	display: none;
+}
+
+.modal-show {
+    display: block;
+}
+
+.modal-cart h3 {
+	font-size: 30px;
+	padding-top: 66px;
+	padding-left: 99px;
+}
+
+.buttons {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-top: 37px;
+	font-size: 14px;
+	line-height: 18px;	
+}
+
+.form-button-cart-background {
+	background-color: #f4f4f4;
+	height: 112px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	text-align: left;
+	margin-top: 63px;
+	vertical-align: middle;
+}
+
+.form-button-cart {
+	color: #ffffff;
+	background-color: #ee3643;
+	text-align: center;
+	padding-top: 12px;
+    padding-bottom: 12px;
+	width: 220px;
+}
+
+.form-button-continue {
+	text-align: center;
+	background-color: #ffffff;
+	border-radius: 3px;
+	width: 220px;
+	padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.form-button-continue a {
+	color: #000000;
+	text-transform: uppercase;
+}
+
+/*окно с картой*/
+
+.modal-map {
+	width: 940px;
+	height: 446px;
+	background-image: url("../img/modal-check.svg");
+	background-repeat: no-repeat;
+	background-position: 70px 48px;
+	display: none;
+}
+
+.modal-show {
+    display: block;
 }
