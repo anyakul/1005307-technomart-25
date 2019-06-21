@@ -73,15 +73,15 @@
 						</div>
                     </div>
 	                <nav>
-	                    <div class="nav-menu container">
-	                        <a href="main.html">Главная</a>
-                            <a href="company.html">Компания</a>
-                            <a href="catalog.html">Каталог</a>
-                            <a href="news.html">Новости</a>
-                            <a href="special-offers.html">Спецпредложения</a>
-                            <a href="delivery.html">Доставка</a>
-                            <a href="contacts.html">Контакты</a>		  
-		                </div>
+	                    <ul class="nav-menu container">
+	                        <a href="index.html"><li>Главная</li></a>
+                            <a href="company.html"><li>Компания</li></a>
+                            <a href="catalog.html"><li>Каталог</li></a>
+                            <a href="news.html"><li>Новости</li></a>
+                            <a href="special-offers.html"><li>Спецпредложения</li></a>
+                            <a href="delivery.html"><li>Доставка</li></a>
+                            <a href="contacts.html"><li>Контакты</li></a>		  
+		                </ul>
 					</nav>
 				</div>
 			</section>
@@ -91,8 +91,7 @@
 		        <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
 			    <section class="all-categories">
 				    <div class="materials-tools-technics">
-						<div class="category-item category-item-materials">
-						    <span class="flag-new"></span>
+						<div class="category-item category-item-materials flag-new">
 						    <div class="category-item-text">
 							    <div>Материалы</div>
 						        <a href="#"><p class="category-item-button">На любой вкус</p></a>
@@ -112,13 +111,13 @@
 					    </div>		
                     </div>	
                     <div class="delivery-discounts-slider">				
-				        <input class="visually-hidden" type="radio" id="product-1" value="product-1" name="toggle" checked>
-                        <input class="visually-hidden" type="radio" id="product-2" value="product-2" name="toggle">
+				        <input class="visually-hidden"  type="radio" id="product-1" value="product-1" name="toggle" checked>
+                        <input class="visually-hidden" type="radio" id="product-2" value="product-2" name="toggle">                  
                         <div class="site-wrapper">
                             <div class="slider">
 							    <div class="slider-controls-rounds">
-								    <label id="slide-1" class="slider-controls-round slider-controls-round--1" for="product-1">слайдер1</label>
-									<label id="slide-2" class="slider-controls-round slider-controls-round--2" for="product-2">слайдер2</label>
+					 		        <label id="slide-1" class="slider-controls-round slider-controls-round--1" for="product-1">< слайдер1 </label>
+									<label id="slide-2" class="slider-controls-round slider-controls-round--2" for="product-2">< слайдер2 </label>        
 								</div>
 								<div class="slider-controls-arrows">
                                     <label class="slider-controls-left" for="product-1">
@@ -204,12 +203,10 @@
                             <div class="discount">30500 Р.</div>
                             <div class="price">25500 Р.</div>
                         </div>
-    				    <div class="catalog-item">
-						    <span class="flag flag-new"></span>
+    				    <div class="catalog-item flag-new">
 						    <div class="actions">
                                 <a href="#" class="buy">Купить</a>
                                 <a href="#" class="bookmark">В закладки</a>
-								<span class="flag flag-new"></span>
                             </div>
                             <div class="image"><img width="218" height="168" src="img/item1.png" alt="Перфоратор BOSCH BFG 2000"></div>
                             <div class="title"><a href=#>Перфоратор BOSCH BFG 2000</a></div>
@@ -392,7 +389,7 @@
             <form class="message-form" method="POST" action="https://echo.htmlacademy.ru/">
 			    <div class="form-container">
 			        <div class="name-email">
-	    			    <label>Ваше имя:<input class="message" type="text" name="name" placeholder="Имя Фамилия"></label>
+	    			    <label>Ваше имя:<input class="message" type="text" name="namem" placeholder="Имя Фамилия"></label>
 				        <label>Ваш e-mail:<input class="message" type="text" name="email" placeholder="email@example.com"></label>
 				    </div>
 				    <div class="text-message">
@@ -413,7 +410,20 @@
             <p><img src="img/map.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
-        <script src="js/modal-message.js"></script>
-		<script src="js/modal-map.js"></script>
+		<section class="modal modal-cart">
+			    <div class="form-container">
+				    <h3>Товар добавлен в корзину!</h3>
+				</div>
+				<div class="form-button-cart-background">
+			        <div class="form-container"> 
+					    <ul class="buttons">
+				            <li class="button form-button-cart"><a href="#">Оформить заказ</a></li>
+						    <li class="form-button-continue"><a href="#">Продолжить покупки</a></li>
+						</ul>
+				 	</div>   
+				</div>
+                <button class="modal-close" type="button">Закрыть</button>
+		</section>	
+        <script src="js/index-script.js"></script>
 	</body>
 </html>
