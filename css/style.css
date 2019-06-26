@@ -34,7 +34,7 @@ a {
 	background-color: #ff5357;
 	border: none;
 	border-radius: 3px;
-	padding: 11px 0;
+	padding: 12px 0;
 }
 
 .button:hover,
@@ -96,6 +96,7 @@ a  {
 /*логотип*/
 .header-logo {
 	position: relative;
+	border-radius: 0;
 	box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 	width: 220px;
 	padding-top: 16px;
@@ -154,7 +155,7 @@ a  {
     color: #ffffff;
 	border-radius: 0;
 	min-width: 150px;
-	padding: 10px 0;
+	padding: 11px 0;
 }
 
 .menu-order-button a {
