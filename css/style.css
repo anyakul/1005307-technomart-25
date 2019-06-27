@@ -426,7 +426,6 @@ a  {
 .user-info-item a:focus {
     color: #ee3643;
     border-bottom: 1px #ee3643 solid;
-	outline: none;
 }
 
 .user-info-item a:active {
