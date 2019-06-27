@@ -386,7 +386,6 @@ a  {
 	opacity: 1;
 }
 
-
 .sign-in-button:active svg,
 .user-name:active svg {
     fill: #c5c5c5;	
@@ -473,185 +472,6 @@ a  {
 	color: rgba(255, 255, 255, 0.6);
 }
 
-/*ФУТЕР*/
-
-.footer-nav-back .container,
-.footer-copyright {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/*логотип, телефон, адрес, навигация по сайту (компания, новости...), навигация по каталогу*/
-
-.footer-nav-back {
-	font-size: 18px;
-	background-color: #32425c;
-	padding-bottom: 48px;
-}
-
-.footer-contacts {
-	width: 330px;
-}
-
-.footer-logo-back img {
-    background-color: #ee3643;
-    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-    padding: 20px 41px 25px 41px;
-} 
-
-.footer-address {
-	font-style: normal;
-	line-height: 24px;
-	color: #f1f5f7;
-	padding-top: 22px;
-}
-
-.footer-navigation {
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    margin-top: 40px;
-}
-
-.footer-site-navigation {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    padding-bottom: 30px;
-}
-
-.footer-site-navigation a {
-	color: #f1f5f7;
-}
-
-.footer-site-navigation a:hover,
-.footer-site-navigation a:focus {
-    text-decoration: underline;
-}
-
-.footer-site-navigation a:active {
-    text-decoration: none;
-    color: rgba(241, 245, 247, 0.5);
-}
-
-.footer-catalog-navigation {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    width: 525px;
-	margin-left: 25px;
-}
- 
-.footer-catalog-navigation a {
-    color: #ffd180;
-}
-
-.footer-catalog-navigation a:hover,
-.footer-catalog-navigation a:focus {
-    text-decoration: underline;
-}
-
-.footer-catalog-navigation a:active {
-    text-decoration: none;
-	color: rgba(255, 209, 128, 0.5);   
-}
-
-/*Копирайт, социальные сети, обратная связь, разработано*/
-
-.footer-copyright-back {
-	font-size: 16px;
-	line-height: 18px;
-	color: #ffffff;
-	background-color: #293449;
-	padding-top: 40px;
-	padding-bottom: 30px;
-}
-
-.copyright {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.footer-copyright {
-	width: 228px;
-	margin-right: 54px;
-}
-
-.footer-social {
-	display: flex;
-	flex-wrap: wrap;
-	width: 135px;
-}
-
-.footer-social a {
-	display: inline-block;
-	vertical-align: top;
-	opacity: 1;
-	background-color: #212a3a;
-	border-radius: 50%;
-	width: 42px;
-	height: 42px;
-	margin-right: 3px;
-}
-
-.footer-social a:hover,
-.footer-social a:focus,
-.footer-social a:active {
-	background-color: #ee3643;
-}
-
-.footer-social .vk {
-    opacity: 1;
-	padding: 13px 0 14px 8px;
-}
-
-.footer-social .fb {
-	opacity: 1;
-    padding: 10px 0 10px 15px;
-}
-
-.footer-social .instagram {
-	opacity: 1;
-    padding: 10px 0 11px 10px;
-}
-
-.footer-copyright-contacts {
-    font-size: 16px;
-    line-height: 18px;
-	color: #ffd180;
-}
-
-.footer-copyright-contacts:hover,
-.footer-copyright-contacts:focus {
-    text-decoration: underline;
-}
-
-.footer-copyright-contacts:active {
-    color: #ee3643;
-    text-decoration: none;
-}
-
-.footer-other-contacts {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	width: 284px;
-	margin-right: 15px;
-}
-
-.footer-email {
-	display: block;
-	width: 135px;
-}	
-
-.footer-site {
-	display: block;
-	width: 96px;
-	padding-left: 10px;
-}
-
 /*MAIN*/
 
 /*Категории и слайды*/
@@ -713,6 +533,7 @@ a  {
 .category-item-button:hover {
     background-color: rgba(0, 0, 0, 0.2); 
 }
+
 .category-item-button:active {
     background-color: rgba(0, 0, 0, 0.3); 	
 }
@@ -922,9 +743,11 @@ a  {
 .bosch img {
 	top: 53px;
 }
+
 .makita img {
 	top: 50px;
 }
+
 .dewalt img {
 	top: 48px;
 }
@@ -1102,6 +925,7 @@ a  {
     width: 195px;
 	margin-top: 80px;	
 }
+
 .service-label:active,
 #delivery-slide:checked~.service-list .service-slide:nth-of-type(1),
 #guarantee-slide:checked~.service-list .service-slide:nth-of-type(2),
@@ -1272,11 +1096,6 @@ a  {
     color: #000000;
     background-color: #f7f3ec;
     padding: 10px 0 10px 18px;
-}
-
-.filter-item {
-    margin: 0;
-    padding: 0;
 }
 
 .filter-form fieldset {
@@ -1827,6 +1646,185 @@ a  {
     width: 938px;
     margin-top: 25px;
     padding-right: 0;
+}
+
+/*ФУТЕР*/
+
+.footer-nav-back .container,
+.footer-copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*логотип, телефон, адрес, навигация по сайту (компания, новости...), навигация по каталогу*/
+
+.footer-nav-back {
+	font-size: 18px;
+	background-color: #32425c;
+	padding-bottom: 48px;
+}
+
+.footer-contacts {
+	width: 330px;
+}
+
+.footer-logo-back img {
+    background-color: #ee3643;
+    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+    padding: 20px 41px 25px 41px;
+} 
+
+.footer-address {
+	font-style: normal;
+	line-height: 24px;
+	color: #f1f5f7;
+	padding-top: 22px;
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin-top: 40px;
+}
+
+.footer-site-navigation {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.footer-site-navigation a {
+	color: #f1f5f7;
+}
+
+.footer-site-navigation a:hover,
+.footer-site-navigation a:focus {
+    text-decoration: underline;
+}
+
+.footer-site-navigation a:active {
+    text-decoration: none;
+    color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-catalog-navigation {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    width: 525px;
+	margin-left: 25px;
+}
+ 
+.footer-catalog-navigation a {
+    color: #ffd180;
+}
+
+.footer-catalog-navigation a:hover,
+.footer-catalog-navigation a:focus {
+    text-decoration: underline;
+}
+
+.footer-catalog-navigation a:active {
+    text-decoration: none;
+	color: rgba(255, 209, 128, 0.5);   
+}
+
+/*Копирайт, социальные сети, обратная связь, разработано*/
+
+.footer-copyright-back {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #293449;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-copyright {
+	width: 228px;
+	margin-right: 54px;
+}
+
+.footer-social {
+	display: flex;
+	flex-wrap: wrap;
+	width: 135px;
+}
+
+.footer-social a {
+	display: inline-block;
+	vertical-align: top;
+	opacity: 1;
+	background-color: #212a3a;
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	margin-right: 3px;
+}
+
+.footer-social a:hover,
+.footer-social a:focus,
+.footer-social a:active {
+	background-color: #ee3643;
+}
+
+.footer-social .vk {
+    opacity: 1;
+	padding: 13px 0 14px 8px;
+}
+
+.footer-social .fb {
+	opacity: 1;
+    padding: 10px 0 10px 15px;
+}
+
+.footer-social .instagram {
+	opacity: 1;
+    padding: 10px 0 11px 10px;
+}
+
+.footer-copyright-contacts {
+    font-size: 16px;
+    line-height: 18px;
+	color: #ffd180;
+}
+
+.footer-copyright-contacts:hover,
+.footer-copyright-contacts:focus {
+    text-decoration: underline;
+}
+
+.footer-copyright-contacts:active {
+    color: #ee3643;
+    text-decoration: none;
+}
+
+.footer-other-contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 284px;
+	margin-right: 15px;
+}
+
+.footer-email {
+	display: block;
+	width: 135px;
+}	
+
+.footer-site {
+	display: block;
+	width: 96px;
+	padding-left: 10px;
 }
 
 /*ВСПЛЫВАЮЩИЕ ОКНА*/
