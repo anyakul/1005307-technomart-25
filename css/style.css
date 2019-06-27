@@ -90,6 +90,8 @@ a  {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+	font-size: 17px;
+	line-height: 18px;
     height: 41px;
 }
 
@@ -109,9 +111,6 @@ a  {
 }
 
 .search-form-input {
-	font-family: "Cuprum", "Arial", sans-serif;
-	font-size: 17px;
-	line-height: 18px;
     color: #ffffff;
 	background: transparent url("../img/icon-search-darkgrey.svg") no-repeat 17px 12px;
 	border: none;
@@ -148,8 +147,6 @@ a  {
 /*ссылки закладки, корзина*/
 
 .menu-order-button {
-    font-size: 17px;
-	line-height: 18px;
 	text-align: left;
 	text-transform: none;
     color: #ffffff;
@@ -309,9 +306,8 @@ a  {
     text-align: left;
 	color: #000000;
 	background-color: #ffffff;
-	height: 32px;
 	padding-top: 10px;
-	padding-bottom: 0px;
+	padding-bottom: 10px;
 }
 
 .sign-in-button {
