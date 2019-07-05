@@ -68,11 +68,6 @@ a {
     overflow: hidden;
 }
 
-a {
-	margin: 0;
-	padding: 0;
-}
-
 /*ХЕДЕР*/
 
 /*логитип, поиск, закладки, корзина, сдалать заказ*/
@@ -93,9 +88,6 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
 	font-size: 17px;
 	line-height: 18px;
     height: 42px;
@@ -1063,6 +1055,7 @@ a {
 
 .service-slide:nth-of-type(3) p {
     margin-bottom: 31px;
+	width: 279px;
 }
 
 .service-slide-delivery {
